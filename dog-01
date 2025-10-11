@@ -1,4 +1,4 @@
-# Shadowrocket: 2025-10-11 17:10:00 (懒人智能分流版)
+# Shadowrocket: 2025-10-11 18:30:00 (荒野乱斗国服优化版)
 [General]
 bypass-system = true
 dns-server = 223.5.5.5, 119.29.29.29
@@ -18,19 +18,14 @@ update-url = https://raw.githubusercontent.com/<你的用户名>/<仓库名>/mai
 
 [Proxy Group]
 🌏 国外网站 = select,PROXY,🇭🇰 香港节点,🇺🇸 美国节点,🇸🇬 狮城节点,🇯🇵 日本节点,🇨🇳 台湾节点,interval=86400,timeout=3,select=0,url=http://1.1.1.1/generate_204
-📽️ 国际媒体 = select,PROXY,🇭🇰 香港节点,🇺🇸 美国节点,🇸🇬 狮城节点,🇯🇵 日本节点,🇨🇳 台湾节点,interval=86400,timeout=3,select=0,url=http://1.1.1.1/generate_204
-🖥️ 微软服务 = select,PROXY,🇭🇰 香港节点,🇺🇸 美国节点,🇸🇬 狮城节点,🇯🇵 日本节点,🇨🇳 台湾节点,interval=86400,timeout=3,select=0,url=http://1.1.1.1/generate_204
-🌌 谷歌服务 = select,PROXY,🇭🇰 香港节点,🇺🇸 美国节点,🇸🇬 狮城节点,🇯🇵 日本节点,🇨🇳 台湾节点,interval=86400,timeout=3,select=0,url=http://1.1.1.1/generate_204
-📟 电报消息 = select,PROXY,🇭🇰 香港节点,🇺🇸 美国节点,🇸🇬 狮城节点,🇯🇵 日本节点,🇨🇳 台湾节点,interval=86400,timeout=3,select=0,url=http://1.1.1.1/generate_204
-🐦 推特消息 = select,PROXY,🇭🇰 香港节点,🇺🇸 美国节点,🇸🇬 狮城节点,🇯🇵 日本节点,🇨🇳 台湾节点,interval=86400,timeout=3,select=0,url=http://1.1.1.1/generate_204
-🤖 AI = select,PROXY,🇭🇰 香港节点,🇺🇸 美国节点,🇸🇬 狮城节点,🇯🇵 日本节点,🇨🇳 台湾节点,interval=86400,timeout=3,select=0,url=http://1.1.1.1/generate_204
-🎮 游戏平台 = select,PROXY,🇭🇰 香港节点,🇺🇸 美国节点,🇸🇬 狮城节点,🇯🇵 日本节点,🇨🇳 台湾节点,interval=86400,timeout=3,select=0,url=http://1.1.1.1/generate_204
-📽️ Emby = select,PROXY,🇭🇰 香港节点,🇺🇸 美国节点,🇸🇬 狮城节点,🇯🇵 日本节点,🇨🇳 台湾节点,DIRECT,use=true,interval=86400,url=http://1.1.1.1/generate_204,timeout=3,select=0
-🎵 Spotify = select,PROXY,🇭🇰 香港节点,🇺🇸 美国节点,🇸🇬 狮城节点,🇯🇵 日本节点,🇨🇳 台湾节点,interval=86400,timeout=3,select=0,url=http://1.1.1.1/generate_204
+🎮 游戏平台 = select,DIRECT,🇭🇰 香港节点,🇺🇸 美国节点,🇸🇬 狮城节点,🇯🇵 日本节点,🇨🇳 台湾节点,interval=86400,timeout=3,select=0,url=http://1.1.1.1/generate_204
 🚫 广告屏蔽 = select,REJECT,DIRECT
 🐟 兜底分流 = select,PROXY,🇭🇰 香港节点,🇺🇸 美国节点,🇸🇬 狮城节点,🇯🇵 日本节点,🇨🇳 台湾节点,DIRECT,interval=86400,timeout=3,select=0,url=http://1.1.1.1/generate_204
 
 [Rule]
+# 荒野乱斗国服优化
+DOMAIN-KEYWORD,brawlstars,DIRECT
+
 # 广告 & 反追踪
 RULE-SET,https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt,🚫 广告屏蔽
 RULE-SET,https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt,🚫 广告屏蔽
