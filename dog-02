@@ -10,10 +10,9 @@ private-ip-answer = true
 hijack-dns = *:53
 skip-proxy = localhost, *.local, captive.apple.com
 always-real-ip = *.lan, *.direct
-update-url = https://raw.githubusercontent.com/<你的用户名>/Shadowrocket_auto_update/main/dog-02
+update-url = https://raw.githubusercontent.com/Dogshushu/Shadowrocket_auto_update.conf/main/dog-02
 
 [Proxy Group]
-# 保留你的原节点配置，示例：
 国外网站 = select, PROXY, 香港节点, 美国节点, 日本节点, interval=86400, timeout=3, select=0
 国际媒体 = select, PROXY, 美国节点, 香港节点, interval=86400
 微软服务 = select, PROXY, 美国节点, interval=86400
@@ -21,7 +20,6 @@ update-url = https://raw.githubusercontent.com/<你的用户名>/Shadowrocket_au
 兜底分流 = select, PROXY, 香港节点, 美国节点, DIRECT, interval=86400
 
 [Rule]
-# 保留原规则
 DOMAIN-KEYWORD,brawlstars,DIRECT
 GEOIP,CN,DIRECT
 FINAL, 兜底分流
